@@ -5,10 +5,32 @@
 </head>
 <body>
   <div class="mermaid">
-  graph LR
-      A --- B
-      B-->C[fa:fa-ban forbidden]
-      B-->D(fa:fa-spinner);
+  graph TD
+  A(Source):::top 
+  A --- B(Source proto):::mid
+      B --- C(Quote pour une source)
+      B --- D(Passer la commande)
+      B --- E(Plans de test):::mid
+          E --- F(Plan de tests temp):::mid
+              F --- G(Puissance maximale)
+              F --- H(Ondulations de tension)
+              F --- I(Réponse transitoire)
+              F --- J(Temps de monté)
+              F --- K(Surcharge/court-circuit)
+          E --- L(Validation<br>Khaled Arfa)
+          E --- M(Plans de tests finaux)
+      B --- N(Tester la source):::mid
+          N --- O(Modalités de test<br>Khaled Arfa)
+          N --- P(Effectuer les tests<br>technicien)
+  A --- Q(Solution finale):::mid
+      Q --- R(Analyse durée de vie <br>composants)
+      Q --- S(Vérification RoHS)
+      Q --- T(Recherche homologation )
+      Q --- U(Transition<br>prototype->final)
+
+  classDef top fill:#F7D59C,stroke:#5E454B,color:#000
+  classDef mid fill:#CEE5D0,stroke:#5E454B,color:#000
+  classDef default fill:#F3F0D7,stroke:#5E454B,color:#000
   </div>
  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
  <script>mermaid.initialize({startOnLoad:true});
