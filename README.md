@@ -6,7 +6,7 @@ graph LR
     C --> |1| D(Tests avec<br>technicien)
     E(Modalités test) --> |1| D
     F(Commande de <br>la source) ----> |4| D
-    D --> |2| G
+    D --> |1| G
 
     H(Analyse durée<br>de vie) --> |1| G(Rédaction <br> rapport final)
     I(Vérification<br>RoHS) --> |1| G
@@ -36,7 +36,7 @@ graph LR
     b(Choix PDB) --> |1| c(Commande PDB)
     c --> G
 
-    G --> |2| d(Remise <br> rapport final)
+    G --> |1| d(Remise <br> rapport final)
 ```
 
 # Source
