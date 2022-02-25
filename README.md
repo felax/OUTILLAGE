@@ -39,7 +39,7 @@ graph LR
 
 # Source
 ``` mermaid
-graph TD
+graph LR
 A(Source):::top 
 A --- B(Source proto):::mid
     B --- C(Quote pour une source)
@@ -69,7 +69,7 @@ classDef default fill:#F3F0D7,stroke:#5E454B,color:#000
 
 # Contrôle
 ``` mermaid
-graph TD
+graph LR
 A2(Contrôle):::top
 A2 --- B2(Gestion derreurs):::mid
     B2 --- C2(Schéma états)
@@ -98,7 +98,7 @@ classDef default fill:#F3F0D7,stroke:#5E454B,color:#000
 
 # Mécanique
 ``` mermaid
-graph TD
+graph LR
 a(Mécanique):::top
 a --- b(Caps HVIL):::mid
     b --- c(Design)
