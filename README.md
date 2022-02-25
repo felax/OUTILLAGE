@@ -26,7 +26,7 @@ graph LR
 
     U(Design <br> caps HVIL) --> |1| V(Impression <br> caps HVIL)
     V --> |1| Y(Test boite <br> jonction)
-    W(Usinage <br> boite jonction) --> |1| X(Assemblage <br> boite jonction)
+    W(Usinage, assemblage <br> boite jonction) --> |1| Y
     e(Choix boite <br>jonction) --> |1| f(Commande <br> boite jonction)
     f --> |1| W
     X --> |1| Y
