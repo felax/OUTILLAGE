@@ -29,7 +29,6 @@ graph LR
     W(Usinage, assemblage <br> boite jonction) --> |1| Y
     e(Choix boite <br>jonction) --> |1| f(Commande <br> boite jonction)
     f --> |1| W
-    X --> |1| Y
     Y --> |1| G
 
     Z(Design <br> boîtier PCB) --> |1| a(Impression, <br> assemblage <br> boîtier PCB)
