@@ -16,6 +16,7 @@ graph LR
     L(Schéma états) --> |1| M(Implémentation)
     M --> |1| N(Tests module <br> contrôle)
     N --> |1| D
+    g(Commande <br> PCB isolement) -->|3| O
     O(Assemblage <br> mesure isolement) --> |1| N
     P(Plans de test <br> mesure isolement) --> |1| N
     Q(Identifier <br> module HVIL) --> |1| R(Intégration <br> HVIL-MD4)
@@ -26,6 +27,8 @@ graph LR
     U(Design <br> caps HVIL) --> |1| V(Impression <br> caps HVIL)
     V --> |1| Y(Test boite <br> jonction)
     W(Usinage <br> boite jonction) --> |1| X(Assemblage <br> boite jonction)
+    e(Choix boite <br>jonction) --> |1| f(Commande <br> boite jonction)
+    f --> |1| W
     X --> |1| Y
     Y --> |1| G
 
