@@ -1,3 +1,42 @@
+# PERT
+``` mermaid
+graph LR
+    A(Plans de test<br>source) --> |1| B(Validation<br>Khaled Arfa)
+    B --> |1| C(Plan de tests <br>source révisés)
+    C --> |1| D(Tests avec<br>technicien)
+    E(Modalités test) --> |1| D
+    F(Commande de <br>la source) ----> |4| D
+    D --> |2| G
+
+    H(Analyse durée<br>de vie) --> |1| G(Rédaction <br> rapport final)
+    I(Vérification<br>RoHS) --> |1| G
+    J(Recherche <br> Homologation) --> |1| G
+    K(Transition <br> proto-final) --> |1| G
+
+    L(Schéma états) --> |1| M(Implémentation)
+    M --> |1| N(Tests module <br> contrôle)
+    N --> |1| D
+    O(Assemblage <br> mesure isolement) --> |1| N
+    P(Plans de test <br> mesure isolement) --> |1| N
+    Q(Identifier <br> module HVIL) --> |1| R(Intégration <br> HVIL-MD4)
+    R --> |1| N
+    S(Schéma <br> communication <br> source-MD4) --> |1| T(Implémentation <br> communication)
+    T --> |1| N
+
+    U(Design <br> caps HVIL) --> |1| V(Impression <br> caps HVIL)
+    V --> |1| Y(Test boite <br> jonction)
+    W(Usinage <br> boite jonction) --> |1| X(Assemblage <br> boite jonction)
+    X --> |1| Y
+    Y --> |1| G
+
+    Z(Design <br> boîtier PCB) --> |1| a(Impression, <br> assemblage <br> boîtier PCB)
+    a --> |1| G
+    b(Choix PDB) --> |1| c(Commande PDB)
+    c --> G
+
+    G --> |2| d(Remise <br> rapport final)
+```
+
 # Source
 ``` mermaid
 graph TD
