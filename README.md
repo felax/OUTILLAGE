@@ -24,7 +24,7 @@ graph LR
     S(Schéma <br> communication <br> source-MD4) --> |1| T(Implémentation <br> communication)
     T --> |1| N
 
-    U(Design <br> caps HVIL) --> |1| V(Impression <br> caps HVIL)
+    h(Commande <br> connecteurs) --> |2| U(Design <br> caps HVIL) --> |1| V(Impression <br> caps HVIL)
     V --> |1| Y(Test boite <br> jonction)
     W(Usinage, assemblage <br> boite jonction) --> |1| Y
     e(Choix boite <br>jonction) --> |1| f(Commande <br> boite jonction)
