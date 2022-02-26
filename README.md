@@ -1,42 +1,75 @@
 # PERT
 ``` mermaid
 graph LR
-    A(Plans de test<br>source) --> |1| B(Validation<br>Khaled Arfa)
-    B --> |1| C(Plan de tests <br>source révisés)
-    C --> |1| D(Tests avec<br>technicien)
-    E(Modalités test) --> |1| D
-    F(Commande de <br>la source) ----> |4| D
+    A(Plans de test<br>source):::prog
+    B(Validation<br>Khaled Arfa):::prog
+    C(Plan de tests <br>source révisés)
+    D(Tests avec<br>technicien)
+    E(Modalités test):::prog
+    F(Commande de <br>la source):::prog
+    G(Rédaction <br> rapport final)
+    H(Analyse durée<br>de vie)
+    I(Vérification<br>RoHS)
+    J(Recherche <br> Homologation)
+    K(Transition <br> proto-final)
+    L(Schéma états):::prog
+    M(Implémentation)
+    N(Tests module <br> contrôle)
+    O(Assemblage <br> mesure isolement)
+    P(Plans de test <br> mesure isolement):::done
+    Q(Identifier <br> module HVIL):::prog
+    R(Intégration <br> HVIL-MD4)
+    S(Schéma <br> communication <br> source-MD4):::prog
+    T(Implémentation <br> communication)
+
+    V(Design, impression <br> caps HVIL)
+    W(Usinage, assemblage <br> boite jonction)
+    Y(Test boite <br> jonction)
+    Z(Design <br> boîtier PCB):::done
+
+    a(Impression, <br> assemblage <br> boîtier PCB)
+    b(Choix PDB):::prog
+    c(Commande PDB)
+    e(Choix boite <br>jonction):::prog
+    d(Remise <br> rapport final)
+    f(Commande <br> boite jonction)
+    g(Commande <br> PCB isolement):::prog
+    h(Commande <br> connecteurs):::prog
+    
+    B --> |1| C
+    C --> |1| D
+    E --> |1| D
+    F ----> |4| D
     D --> |1| G
-
-    H(Analyse durée<br>de vie) --> |1| G(Rédaction <br> rapport final)
-    I(Vérification<br>RoHS) --> |1| G
-    J(Recherche <br> Homologation) --> |1| G
-    K(Transition <br> proto-final) --> |1| G
-
-    L(Schéma états) --> |1| M(Implémentation)
-    M --> |1| N(Tests module <br> contrôle)
+    H --> |1| G
+    I --> |1| G
+    J --> |1| G
+    K --> |1| G
+    L --> |1| M
+    M --> |1| N
     N --> |1| D
-    g(Commande <br> PCB isolement) -->|3| O
-    O(Assemblage <br> mesure isolement) --> |1| N
-    P(Plans de test <br> mesure isolement) --> |1| N
-    Q(Identifier <br> module HVIL) --> |1| R(Intégration <br> HVIL-MD4)
+    O --> |1| N
+    P --> |1| N
+    Q --> |1| R
     R --> |1| N
-    S(Schéma <br> communication <br> source-MD4) --> |1| T(Implémentation <br> communication)
+    S --> |1| T
     T --> |1| N
-
-    h(Commande <br> connecteurs) --> |2| V(Design, impression <br> caps HVIL)
-    V --> |1| Y(Test boite <br> jonction)
-    W(Usinage, assemblage <br> boite jonction) --> |1| Y
-    e(Choix boite <br>jonction) --> |1| f(Commande <br> boite jonction)
+    h --> |2| V
+    V --> |1| Y
+    W --> |1| Y
+    e --> |1| f
     f --> |1| W
     Y --> |1| G
-
-    Z(Design <br> boîtier PCB) --> |1| a(Impression, <br> assemblage <br> boîtier PCB)
+    Z --> |1| a
     a --> |1| G
-    b(Choix PDB) --> |1| c(Commande PDB)
+    b --> |1| c
     c --> G
+    g -->|3| O
+    A --> |1| B
+    G --> |1| d
 
-    G --> |1| d(Remise <br> rapport final)
+classDef done stroke:MediumSeaGreen,stroke-width:2px;
+classDef prog stroke:Orange,stroke-width:2px;
 ```
 
 # Source
