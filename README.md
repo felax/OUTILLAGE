@@ -8,10 +8,10 @@ graph LR
     E(Modalités test):::prog
     F(Commande de <br>la source):::prog
     G(Rédaction <br> rapport final)
-    H(Analyse durée<br>de vie)
-    I(Vérification<br>RoHS)
-    J(Recherche <br> Homologation)
-    K(Transition <br> proto-final)
+    H(Analyse durée<br>de vie):::prog
+    I(Vérification<br>RoHS):::prog
+    J(Recherche <br> Homologation):::done
+    K(Transition <br> proto-final):::prog
     L(Schéma états):::prog
     M(Implémentation)
     N(Tests module <br> contrôle)
