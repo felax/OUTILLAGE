@@ -30,7 +30,7 @@ graph LR
     a(Impression, <br> assemblage <br> boîtier PCB)
     b(Choix PDB):::prog
     c(Commande PDB)
-    e(Choix boite <br>jonction):::prog
+    e(Adapter boite <br>jonction):::prog
     d(Remise <br> rapport final)
     f(Commande <br> boite jonction)
     g(Commande <br> PCB isolement):::prog
