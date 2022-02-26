@@ -21,7 +21,7 @@ graph LR
     R(Intégration <br> HVIL-MD4)
     S(Schéma <br> communication <br> source-MD4):::prog
     T(Implémentation <br> communication)
-
+    U(Choix fusibles <br> et intégration):::prog
     V(Design, impression <br> caps HVIL)
     W(Usinage, assemblage <br> boite jonction)
     Y(Test boite <br> jonction)
@@ -67,6 +67,7 @@ graph LR
     g -->|3| O
     A --> |1| B
     G --> |1| d
+    U --> |1| Y
 
 classDef done stroke:MediumSeaGreen,stroke-width:2px;
 classDef prog stroke:Orange,stroke-width:2px;
