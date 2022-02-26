@@ -10,7 +10,7 @@ graph LR
     G(Rédaction <br> rapport final)
     H(Analyse durée<br>de vie):::prog
     I(Vérification<br>RoHS):::prog
-    J(Recherche <br> Homologation):::done
+    J(Recherche <br> Homologation):::prog
     K(Transition <br> proto-final):::prog
     L(Schéma états):::prog
     M(Implémentation)
